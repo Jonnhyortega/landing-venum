@@ -1,0 +1,388 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background: linear-gradient(
+    to bottom,
+    rgb(255, 255, 255),
+    grey,
+    rgb(255, 255, 255)
+  );
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 100px;
+  margin: 0;
+}
+
+/* HEADER*/
+#header {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.571);
+  width: 100%;
+  height: 12%;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  left: 0;
+  background-color: grey;
+  box-shadow: 1px 1px 10px 1px;
+}
+
+#header-img {
+  width: 50%;
+  height: 100%;
+  margin: 0 0 0 10px;
+}
+
+#nav-bar {
+  /* width: 60%; */
+  display: flex;
+  gap: 10px;
+  /* border: 1px solid white; */
+  align-items: center;
+  margin: 0 10px 0 0;
+}
+
+.nav-link {
+  text-decoration: none;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  background-color: grey;
+  transition: 0.7s all;
+  border-radius: 40px;
+  letter-spacing: 2px;
+  padding: 5px;
+}
+
+.nav-link:hover {
+  color: white;
+  transition: 0.7s all;
+  box-shadow: 1px 1px 8px 2px black;
+}
+
+/* HEADER*/
+
+/* ----------------------------------------------------*/
+
+/* HERO */
+#hero {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  padding: 0 100px 0 100px;
+  /* box-shadow: 1px 1px 10px 1px; */
+  /* background: linear-gradient(
+    to bottom,
+    rgb(255, 255, 255),
+    grey,
+    rgb(255, 255, 255)
+  ); */
+}
+
+#hero p {
+  text-transform: lowercase;
+  font-size: 50px;
+  display: inline-block;
+}
+
+#hero span {
+  display: inline-block;
+  font-weight: 900;
+  font-style: bold;
+  text-transform: uppercase;
+  font-size: 60px;
+  color: rgb(255, 254, 254);
+}
+
+#link-venum {
+  padding: 1%;
+
+  border-radius: 20px;
+  border-bottom: none;
+}
+
+#image-face {
+  height: 15rem;
+  width: 15rem;
+  color: transparent;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: transparent;
+  transition: 0.6s all;
+}
+
+#image-face:hover {
+  transition: 0.6s all;
+  box-shadow: 1px 1px 8px 2px black;
+}
+
+/* HERO */
+
+/* ----------------------------------------------------*/
+
+#video-section {
+  width: 100%;
+  /* height: 80vh; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  gap: 70px;
+}
+
+.title {
+  text-align: center;
+  font-size: 50px;
+  color: black;
+  border-bottom: 5px solid white;
+  padding: 0 0 20px 0;
+  transition: 0.7s all;
+}
+
+#video-section span:hover {
+  transition: 0.7s all;
+  color: white;
+  letter-spacing: 10px;
+}
+
+#video {
+  width: 80%;
+  height: 400px;
+}
+
+/* MENU TOGGLE PARA DISPOS MOVILES */
+
+#title {
+  appearance: none;
+}
+
+#menu_toggle:hover {
+  letter-spacing: 5px;
+}
+
+/* MENU TOGGLE PARA DISPOS MOVILES */
+
+/* PRECIOS SECTION*/
+#title_precios_section {
+  font-size: 100px;
+  color: white;
+}
+#precios-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 150px;
+  padding: 0 50px 0 50px;
+}
+
+#product {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  background-color: white;
+  padding: 0 40px 30px 40px;
+  transition: 0.7s all;
+  border-radius: 10px;
+  background-color: rgb(219, 215, 215);
+  box-shadow: 1px 1px 5px 2px black;
+}
+
+#product:hover {
+  transition: 0.7s all;
+}
+
+#venum {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+#elite {
+  font-size: 25px;
+  font-weight: 900;
+}
+
+#price {
+  color: red;
+}
+
+#img_product {
+  width: 100%;
+}
+
+#product a {
+  text-decoration: none;
+  border: 1px solid white;
+  padding: 15px 25px;
+  background-color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s all;
+  color: black;
+  border: none;
+  box-shadow: 1px 1px 5px 2px black;
+}
+
+#product a:hover {
+  /* color: gold; */
+  transition: 0.3s all;
+  /* letter-spacing: 2px; */
+  box-shadow: 3px 3px 5px 3px black;
+  font-weight: 900;
+  /* background-color: gold; */
+}
+
+/* PRECIOS SECTION*/
+
+/* HISTORIA */
+#historia {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  padding: 0 0 50px 0;
+}
+
+#historia span {
+  font-size: 50px;
+  color: black;
+}
+
+#venum-nosotros {
+  border-radius: 20px;
+  padding: 1%;
+  color: black;
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: 2px;
+  transition: 0.7s;
+  margin: 0;
+  width: 60%;
+}
+/* HISTORIA */
+
+/* FOOTER */
+
+/* form content*/
+footer {
+  width: 100%;
+  background-color: grey;
+  padding: 50px 0 50px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+#form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40%;
+  gap: 10px;
+}
+
+#subscribase {
+  font-size: 20px;
+}
+
+#form input {
+  width: 50%;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 1px 1px 5px 1px;
+  cursor: pointer;
+  padding: 5px;
+}
+
+#form input:hover {
+  box-shadow: 3px 3px 5px 2px;
+}
+
+/* form content*/
+/* FOOTER */
+
+/* QUERYS */
+
+@media (max-width: 1200px) {
+  #precios-section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  #precios-section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 750px) {
+  #precios-section {
+    grid-template-columns: 1fr;
+  }
+
+  #product {
+    margin: 0 10% 0 10%;
+    padding: 0 0 35px 0;
+  }
+
+  #venum {
+    width: 50%;
+  }
+
+  #img_product {
+    width: 100%;
+  }
+
+  #menu_toggle {
+    box-shadow: 0px 0px 5px 1px;
+    padding: 20px;
+    border-bottom: none;
+    cursor: pointer;
+  }
+
+  #title:checked ~ #precios-section {
+    display: none;
+  }
+
+  #hero {
+    flex-direction: column;
+    margin: 100px 0 200px 0;
+  }
+}
+
+@media (max-width: 500px) {
+  #nav-bar a {
+    font-size: 1rem;
+    letter-spacing: 0;
+  }
+
+  #hero {
+    flex-direction: column;
+    margin: 100px 0 200px 0;
+  }
+
+  #hero p {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  #form {
+    gap: 10px;
+    width: 100%;
+  }
+}
+
+/* QUERYS */
